@@ -190,15 +190,28 @@ li {
     padding: 10px;
 }
 .link-p {
+    padding-top: 20px;
+    padding-bottom: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 .link-p a {
+    color: #FFFFFF;
     text-decoration: none;
+    font-size: 14px;
 }
-.link-p .demo::before {
-    content: url();
+.link-p a:hover {
+    text-decoration: underline;
+}
+.link-p i{
+    padding-right: 5px;
+}
+.demo i{
+    color: #FCFCFC;
+}
+.github i{
+    color: #FFFFFF;
 }
 .Tech-p {
     font-size: 15px;
