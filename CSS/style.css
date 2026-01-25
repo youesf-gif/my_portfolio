@@ -18,7 +18,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-main * {
+main h1,
+main h2,
+main h3,
+main p,
+main label,
+main input,
+main textarea {
     color: #d3d3d3;
 }
 body {
@@ -40,7 +46,9 @@ body {
 .social-links a i {
     font-size: 25px;
     color: #a7a7a7;
-    transition: color 0.3s, transform 0.3s;
+    transition:
+        color 0.3s,
+        transform 0.3s;
 }
 .social-links a i:hover {
     color: #ececec;
@@ -76,7 +84,9 @@ nav a {
     color: #a7a7a7;
 
     font-size: 20px;
-    transition: color 0.3s, font-size 0.3s;
+    transition:
+        color 0.3s,
+        font-size 0.3s;
 }
 nav a:hover {
     color: #ececec;
@@ -198,22 +208,92 @@ li {
     justify-content: space-between;
 }
 .link-p a {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     font-size: 14px;
 }
 .link-p a:hover {
     text-decoration: underline;
 }
-.link-p i{
+.link-p i {
     padding-right: 5px;
 }
-.demo i{
-    color: #FCFCFC;
+.demo i {
+    color: #fcfcfc;
 }
-.github i{
-    color: #FFFFFF;
+.github i {
+    color: #ffffff;
 }
 .Tech-p {
     font-size: 15px;
+}
+
+/* Contact file */
+
+.contact {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.contact-form {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    background-color: #363636;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.message,
+.message label {
+    display: block;
+}
+
+.message textarea {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+    max-height: 100px;
+    margin-left: 70px;
+    padding: 10px;
+    font-size: 17px;
+    caret-color: #cccccc;
+    background-color: #5b5b5b;
+    outline: none;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+fieldset label {
+    margin-right: 60px;
+    font-size: 18px;
+}
+
+fieldset input {
+    flex-grow: 2;
+    height: 40px;
+    max-width: 300px;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 17px;
+    background-color: #5b5b5b;
+    caret-color: #cccccc;
+    outline: none;
+    border: none;
+}
+
+fieldset input::placeholder,
+.message textarea::placeholder {
+    color: #d3d3d3;
+    font-size: 17px;
 }

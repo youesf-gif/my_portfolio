@@ -69,15 +69,39 @@
         </header>
         <main>
             <section id="contact">
-                <div class="container">
-                    <div class="contact-links">
-
-                    </div>
-                    <div class="contact-form">
-                        <form>
-                            
-                        </form>
-                    </div>
+                <div class="container contact">
+                    <h1>contact me</h1>
+                    <form class="contact-form">
+                        <fieldset>
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Your Name"
+                                name="name"
+                                required
+                            />
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Your Email"
+                                required
+                            />
+                        </fieldset>
+                        <fieldset class="message">
+                            <label for="message">Message:</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                placeholder="Your message"
+                            ></textarea>
+                        </fieldset>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </section>
         </main>
