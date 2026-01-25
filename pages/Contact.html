@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Technologies</title>
-        <link rel="stylesheet" href="CSS/style.css" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="../CSS/style.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -23,11 +23,11 @@
     <body>
         <header>
             <div class="container header">
-                <a href="index.html" class="logo">YoussefO</a>
+                <a href="../index.html" class="logo">YoussefO</a>
                 <div class="header-links">
                     <nav>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="../index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li>
                                 <a href="Technologies.html">Technologies</a>
@@ -68,46 +68,41 @@
             </div>
         </header>
         <main>
-            <section id="technologies">
-                <div class="container technologies">
-                    <div class="t-title">
-                        <h1>My Tech Stack</h1>
-                        <p>Technologies I’ve been working with recently</p>
-                    </div>
-                    <div class="tech-logos">
-                        <div>
-                            <img src="icons/html-5.svg" alt="html-5" />
-                        </div>
-                        <div>
-                            <img src="icons/css.svg" alt="css-3" />
-                        </div>
-                        <div>
-                            <img src="icons/JS.svg" alt="js" />
-                        </div>
-                        <div>
-                            <img src="icons/React.svg" alt="react" />
-                        </div>
-                        <div>
-                            <img src="icons/bootstrap.svg" alt="bootstrap" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="tools">
-                <div class="container tools">
-                    
-                <h1>Tools</h1>
-                <div class="tools-logos">
-                    <div class="git">
-                        <img src="icons/git.svg" alt="git" />
-                    </div>
-                    <div class="github">
-                        <img src="icons/github-logo.svg" alt="github" />
-                    </div>
-                    <div class="vscode">
-                        <img src="icons/vscode.svg" alt="vscode" />
-                    </div>
-                </div>
+            <section id="contact">
+                <div class="container contact">
+                    <h1>contact me</h1>
+                    <form class="contact-form">
+                        <fieldset>
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Your Name"
+                                name="name"
+                                required
+                            />
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Your Email"
+                                required
+                            />
+                        </fieldset>
+                        <fieldset class="message">
+                            <label for="message">Message:</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                placeholder="Your message"
+                                required
+                            ></textarea>
+                        </fieldset>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </section>
         </main>
