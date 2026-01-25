@@ -237,13 +237,13 @@ li {
 }
 
 .contact-form {
-    height: 400px;
+    height: 500px;
     width: 600px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
     background-color: #363636;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
     border-radius: 6px;
 }
@@ -257,9 +257,10 @@ li {
     margin-top: 10px;
     width: 100%;
     max-width: 400px;
-    height: 100px;
-    max-height: 100px;
-    margin-left: 70px;
+    height: 70px;
+    max-height: 150px;
+    min-height: 70px;
+    margin-left: 80px;
     padding: 10px;
     font-size: 17px;
     caret-color: #cccccc;
@@ -296,4 +297,18 @@ fieldset input::placeholder,
 .message textarea::placeholder {
     color: #d3d3d3;
     font-size: 17px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    background-color:#5b5b5b ;
+    color: #d3d3d3;
+    border: none;
+    border-radius:6px ;
+    box-shadow: 2px 3px 2px  #191919;
+    align-self: center;
+}
+button:active{
+    box-shadow: none;
 }
