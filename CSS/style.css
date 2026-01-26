@@ -182,14 +182,16 @@ li {
 
 .p-section {
     flex-direction: column;
-    height: 100%;
+    padding: 0px;
 }
 
 .p-title {
     text-align: center;
     padding: 15px 0px;
 }
-
+.p-cards{
+    padding: 0px;
+}
 .p-cards .card {
     width: calc(95% / 3);
     height: fit-content;
@@ -229,6 +231,19 @@ li {
 }
 .Tech-p {
     font-size: 15px;
+}
+
+.img-card{
+    width: 100%;
+    padding: 5px;
+}
+.img-card img{
+    width: 100%;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+.img-card img:hover{
+    transform: scale(103%);
 }
 
 /* Contact file */
