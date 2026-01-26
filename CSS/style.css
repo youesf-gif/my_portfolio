@@ -189,7 +189,7 @@ li {
     text-align: center;
     padding: 15px 0px;
 }
-.p-cards{
+.p-cards {
     padding: 0px;
 }
 .p-cards .card {
@@ -233,16 +233,16 @@ li {
     font-size: 15px;
 }
 
-.img-card{
+.img-card {
     width: 100%;
     padding: 5px;
 }
-.img-card img{
+.img-card img {
     width: 100%;
     border-radius: 6px;
     transition: all 0.3s;
 }
-.img-card img:hover{
+.img-card img:hover {
     transform: scale(103%);
 }
 
@@ -281,6 +281,7 @@ li {
     margin-left: 80px;
     padding: 10px;
     font-size: 17px;
+    border-radius: 6px;
     caret-color: #cccccc;
     background-color: #5b5b5b;
     outline: none;
@@ -317,16 +318,51 @@ fieldset input::placeholder,
     font-size: 17px;
 }
 
-button{
-    width: 100px;
-    height: 30px;
-    background-color:#5b5b5b ;
+button {
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #5b5b5b;
     color: #d3d3d3;
     border: none;
-    border-radius:6px ;
-    box-shadow: 2px 3px 2px  #191919;
+    border-radius: 6px;
+    box-shadow: 2px 3px 2px #191919;
     align-self: center;
 }
-button:active{
+button:active {
     box-shadow: none;
+    transform: translateY(2px);
+}
+
+/* About file*/
+
+.about {
+    padding-bottom: 30px;
+}
+.about h1 {
+    padding-bottom: 20px;
+}
+.about p {
+    width: 70%;
+    line-height: 25px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.about button {
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 6px;
+    background: linear-gradient(to right, #13b0f5 3%, #e70faa);
+    color: white;
+    transition: all 0.3s;
+}
+.about button:hover {
+    box-shadow:
+        0 8px 25px rgba(109, 56, 181, 0.45),
+        0 4px 12px rgba(0, 180, 255, 0.35);
+}
+.about button:active {
+    box-shadow: 0 4px 12px rgba(109, 56, 181, 0.35);
+    transform: translateY(2px);
 }
