@@ -175,6 +175,7 @@ li {
 }
 
 /* projects file */
+
 .project-header {
     padding-bottom: 70px;
 }
@@ -216,13 +217,15 @@ li {
     text-decoration: underline;
 }
 .link-p i {
-    padding-right: 5px;
+    padding-right: 3px;
 }
 .demo i {
     color: #fcfcfc;
+    font-size: 13px;
 }
 .github i {
     color: #ffffff;
+    font-size: 20px;
 }
 .Tech-p {
     font-size: 15px;
