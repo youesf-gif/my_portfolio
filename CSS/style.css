@@ -2,12 +2,18 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+}
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+}
 /* global */
 .container {
     width: 80%;
@@ -18,13 +24,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-main h1,
-main h2,
-main h3,
-main p,
-main label,
-main input,
-main textarea {
+main{
     color: #d3d3d3;
 }
 body {
@@ -194,6 +194,8 @@ li {
 }
 .p-cards .card {
     width: calc(95% / 3);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     color: #cccccc;
     background-color: #363636;
@@ -272,6 +274,9 @@ li {
 }
 
 .message textarea {
+    color: #d3d3d3;
+    caret-color: #cccccc;
+    background-color: #5b5b5b;
     margin-top: 10px;
     width: 100%;
     max-width: 400px;
@@ -280,10 +285,8 @@ li {
     min-height: 70px;
     margin-left: 80px;
     padding: 10px;
-    font-size: 17px;
+    font-size: 16px;
     border-radius: 6px;
-    caret-color: #cccccc;
-    background-color: #5b5b5b;
     outline: none;
 }
 
@@ -300,16 +303,37 @@ fieldset label {
 }
 
 fieldset input {
+    color: #d3d3d3;
+    background-color: #5b5b5b;
+    caret-color: #cccccc;
     flex-grow: 2;
     height: 40px;
     max-width: 300px;
     border-radius: 6px;
     padding: 10px;
     font-size: 17px;
-    background-color: #5b5b5b;
-    caret-color: #cccccc;
     outline: none;
     border: none;
+}
+
+fieldset input::-webkit-input-placeholder, .message textarea::-webkit-input-placeholder {
+    color: #d3d3d3;
+    font-size: 17px;
+}
+
+fieldset input::-moz-placeholder, .message textarea::-moz-placeholder {
+    color: #d3d3d3;
+    font-size: 17px;
+}
+
+fieldset input:-ms-input-placeholder, .message textarea:-ms-input-placeholder {
+    color: #d3d3d3;
+    font-size: 17px;
+}
+
+fieldset input::-ms-input-placeholder, .message textarea::-ms-input-placeholder {
+    color: #d3d3d3;
+    font-size: 17px;
 }
 
 fieldset input::placeholder,
