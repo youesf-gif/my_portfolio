@@ -8,7 +8,6 @@ h2,
 h3 {
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
-    font-weight: 500;
 }
 
 body {
@@ -24,7 +23,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-main{
+main {
     color: #d3d3d3;
 }
 body {
@@ -316,22 +315,26 @@ fieldset input {
     border: none;
 }
 
-fieldset input::-webkit-input-placeholder, .message textarea::-webkit-input-placeholder {
+fieldset input::-webkit-input-placeholder,
+.message textarea::-webkit-input-placeholder {
     color: #d3d3d3;
     font-size: 17px;
 }
 
-fieldset input::-moz-placeholder, .message textarea::-moz-placeholder {
+fieldset input::-moz-placeholder,
+.message textarea::-moz-placeholder {
     color: #d3d3d3;
     font-size: 17px;
 }
 
-fieldset input:-ms-input-placeholder, .message textarea:-ms-input-placeholder {
+fieldset input:-ms-input-placeholder,
+.message textarea:-ms-input-placeholder {
     color: #d3d3d3;
     font-size: 17px;
 }
 
-fieldset input::-ms-input-placeholder, .message textarea::-ms-input-placeholder {
+fieldset input::-ms-input-placeholder,
+.message textarea::-ms-input-placeholder {
     color: #d3d3d3;
     font-size: 17px;
 }
@@ -389,4 +392,42 @@ button:active {
 .about button:active {
     box-shadow: 0 4px 12px rgba(109, 56, 181, 0.35);
     transform: translateY(2px);
+}
+
+.education {
+    width: 100%;
+}
+.education h1 {
+    padding-bottom: 20px;
+}
+.edu-details-top,
+.edu-details-bottom,
+.date,
+.edu-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+.edu-details {
+    height: 60px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.edu-details-top {
+    justify-content: space-between;
+}
+.edu-details-top h2 {
+    font-weight: 200;
+}
+.date {
+    align-items: center;
+}
+.date i,
+.edu-details-bottom i {
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.edu-details-bottom h5{
+    font-weight: 400;
 }
